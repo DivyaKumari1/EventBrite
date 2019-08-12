@@ -1,0 +1,17 @@
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\EventCatalogAPI.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\EventCatalogAPI.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\BootCampProject\GitHub\Assignment3a\EventBash\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\WebMvc.Views.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\WebMvc.Views.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\TokenServiceApi.Views.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\TokenServiceApi.Views.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\CartApi.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\OrderApi.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\TokenServiceApi.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\WebMvc.dll
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\WebMvc.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\TokenServiceApi.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\CartApi.pdb
+C:\BootCampProject\GitHub\Assignment3a\EventBash\bin\Debug\OrderApi.pdb

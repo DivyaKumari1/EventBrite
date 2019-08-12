@@ -1,0 +1,96 @@
+version: '3.4'
+
+services:
+  cart:
+    image: eventbrite/cartapi:dev
+    build:
+      target: build
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_cart$
+    volumes:
+      - C:\BootCampProject\GitHub\Assignment3a\EventBash\CartApi:/app
+      - C:\Users\Administrator\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_cart$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_cart$ \"bin/Debug/netcoreapp2.1/CartApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+
+  eventcatalog:
+    image: eventbrite/eventapi:dev
+    build:
+      target: build
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_eventcatalog$
+    volumes:
+      - C:\BootCampProject\GitHub\Assignment3a\EventBash\EventCatalogAPI:/app
+      - C:\Users\Administrator\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_eventcatalog$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_eventcatalog$ \"bin/Debug/netcoreapp2.1/EventCatalogAPI.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+
+
+  order:
+    image: eventbrite/orderapi:dev
+    build:
+      target: build
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_order$
+    volumes:
+      - C:\BootCampProject\GitHub\Assignment3a\EventBash\OrderApi:/app
+      - C:\Users\Administrator\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_order$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_order$ \"bin/Debug/netcoreapp2.0/OrderApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+
+
+  tokenserver:
+    image: eventbrite/tokenapi:dev
+    build:
+      target: build
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_tokenserver$
+    volumes:
+      - C:\BootCampProject\GitHub\Assignment3a\EventBash\TokenServiceApi:/app
+      - C:\Users\Administrator\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_tokenserver$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_tokenserver$ \"bin/Debug/netcoreapp2.1/TokenServiceApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+
+
+  webmvc:
+    image: eventbrite/webmvc:dev
+    build:
+      target: build
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_webmvc$
+    volumes:
+      - C:\BootCampProject\GitHub\Assignment3a\EventBash\WebMvc:/app
+      - C:\Users\Administrator\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_webmvc$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_webmvc$ \"bin/Debug/netcoreapp2.1/WebMvc.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+
