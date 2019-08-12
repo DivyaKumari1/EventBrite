@@ -1,3 +1,9 @@
+I have uploaded two file:
+a. A ppt, which describes the overview,goal,future development of EventBrite project
+b. Demo of the project:Screen capture of the working application
+
+
+
 # EventBrite
 EventBrite This EventBrite project is an ecommerce microservice written in C# in the ASP.Net core framework in Visual Studio 2019. The goal of this project was to gain understanding of how to compose an extensible ecommerce microservice from database, to microservices, and finally to a view.
 
